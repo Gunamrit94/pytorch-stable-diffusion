@@ -4,6 +4,7 @@ from torch.nn import functional as F
 from decoder import VAE_AttentionBlock, VAE_ResidualBlock
 
 class VAE_Encoder(nn.Sequential):
+    # for more help look into the U-Net diagram
     def __init__(self):
         super().__init__(
             # (Batch_Size, Channel, Height, Width) -> (Batch_Size, 128, Height, Width)
